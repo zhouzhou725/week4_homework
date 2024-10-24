@@ -20,3 +20,4 @@ inequality_data <- inequality_data %>%
 merged_data <- world_geojson %>%
   left_join(inequality_data, by = "COUNTRY")
 head(merged_data)
+head()
