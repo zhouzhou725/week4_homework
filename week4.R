@@ -31,17 +31,17 @@ head(merged_data)
 #Plotting GII for 2010 and 2019
 ggplot(data = merged_data) +
   geom_sf(aes(fill = gii_2010), color = "black") +
-  scale_fill_viridis_c(option = "plasma", name = "GII 2010") +
+  scale_fill_viridis_c(option = "magma", name = "GII 2010") +
   labs(title = "Global Inequality Index (2010)") +
   theme_minimal()
 ggplot(data = merged_data) +
   geom_sf(aes(fill = gii_2019), color = "black") +
-  scale_fill_viridis_c(option = "plasma", name = "GII 2019") +
+  scale_fill_viridis_c(option = "magma", name = "GII 2019") +
   labs(title = "Global Inequality Index (2019)") +
   theme_minimal()
 #Plotting GII difference
 ggplot(data = merged_data) +
   geom_sf(aes(fill = Inequality_Difference), color = "black") +
-  scale_fill_viridis_c(option = "plasma", name = "GII difference") +
+  scale_fill_viridis_c(option = "magma", name = "GII difference") +
   labs(title = "Global Inequality Index difference") +
   theme_minimal()
